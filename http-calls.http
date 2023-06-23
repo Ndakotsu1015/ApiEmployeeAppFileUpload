@@ -1,0 +1,54 @@
+GET http://localhost:8000/api/employees/employee HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+
+}
+
+###
+POST http://localhost:8000/api/employees/employee HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Musa Aliyu",
+    "state_id": 1,
+    "email":  "mssaliyu1015@gamil.com",
+    "phone_number": "09067543212",
+    "date_of_birth": "2023-10-21",
+    "image":  "jjjjjjjgggggggg.jpg",
+    "file": "hjjjjjjddddjjjjjjjjjjjjjjjj",
+    "local_government_id": 3,
+     "marital_status_id": 2
+}
+###
+PUT  http://localhost:8000/api/employees/employee/1 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Aliyu Ibrahim",
+    "state_id": 2,
+    "email":  "mdlo_ibb@yahoo.com",
+    "phone_number": "09067543212",
+    "date_of_birth": "2023-10-21",
+    "image":  "jjjjjjmmmjgggggggg.jpg",
+    "file": "hjjjjggggggjjddddjjjjjjjjjjjjjjjj",
+    "local_government_id": 4,
+     "marital_status_id": 3
+}
+
+###
+DELETE  http://localhost:8000/api/employees/employee/1 HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+
+}
+
+###
+GET  http://localhost:8000/api/employees/file/get/zYINeBXAwGafNhVAHoVOY6k8HjvEEOy8oCZOo7UH.jpg/public HTTP/1.1
+Content-Type: application/json
+Accept: application/json
